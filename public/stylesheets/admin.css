@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, .8);
+  color: #009CCF; 
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  position: fixed; /* Establecemos la posición como fija */
+  top: 0; /* Fijamos la barra en la parte superior de la página */
+  left: 0;
+  right: 0;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+#admin{
+  color: #00cfbe; 
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0px 18px;
+}
+
+#admin:hover{
+  color: #FFF;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #009CCF;
+  margin: 0px 12px;
+  font-weight: 400;
+  font-size: 18px;
+  transition: .5s;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a:hover{
+  color: #FFF;
+}
+
+nav img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 24px;
+  font-family: Arial Bold, sans-serif;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+h2 {
+  margin-top: 1.5em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"], input[type="file"], textarea {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+textarea{
+  height: 200px;
+}
+
+input[type="file"] {
+  display: block;
+}
+
+input[type="file"] + button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+button[type="submit"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+tbody td, tbody th {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+tbody td:nth-child(1) {
+  width: 100px;
+}
+
+tbody td:nth-child(2) {
+  width: 200px;
+}
+
+tbody td:nth-child(3) {
+  width: 400px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.actions button {
+  margin: 0 5px;
+}
+
+table td img {
+  max-width: 100px;
+  height: auto;
+}
